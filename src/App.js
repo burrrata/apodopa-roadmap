@@ -45,7 +45,7 @@ class App extends Component {
       <div className='app'>
         <div className="app-header">
 					<Canary />
-			    <h1>Hello World</h1>
+			    <h1>Hello Universe</h1>
 				</div>
 				<div className='app-body'>
           <p>
