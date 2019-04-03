@@ -1,0 +1,36 @@
+/****************
+Global App Params 
+****************/
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; /* box sizes include padding and margins */
+}
+
+.app {
+  position: relative;
+  flex: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10vmin;
+  padding: 3%;
+}
+
+.app-header {
+  text-align: center;
+  color: yellow;
+  background: black; /**/
+  padding: 5%;
+}
+.app-header-div {
+  padding: 5%;
+}
+
+.app-body {
+  padding: 5%;
+}
+.app-body-div {
+  padding: 3%;
+}
