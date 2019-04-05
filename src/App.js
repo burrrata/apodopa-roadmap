@@ -35,8 +35,10 @@ class MyComponent extends React.Component {
 						//console.log("allText: ", allText);
 				
 						let arr = allText.split('\n')
+						//console.log(arr)
+
 						let randomAPOD = arr[Math.floor(Math.random()*arr.length)]
-						console.log(randomAPOD)
+						//console.log(randomAPOD)
 
 						// set the state
 						this.setState({
@@ -51,29 +53,49 @@ class MyComponent extends React.Component {
 			rawFile.send(null);
     };
 
-		// THIS JUST LOOPS FOREVER IN ERRORS
-		//readTextFile('./apod-archive-urls.txt')
+		// !!!
+		// Why does this loop?
+		const file = require('./apod-archive-urls.txt');
+		readTextFile(file)
 	}
   
 	// render the component to be included in the app
 	render() {  
+		
+		/*
 		// update the state with a random APOD image
-		this.getRandomAPOD()
+		//setTimeout(this.getRandomAPOD(), 3000)
+		setTimeout(() => {
+			this.getRandomAPOD()
+		},
+		10000);
+		*/
+
 		// check the state
 		console.log(this.state)
+		/*
     const { error, isLoaded, items, url} = this.state;
 		// check for errors
     if (error) {
       return <div>Error: {error}</div>
     } else if (!isLoaded) {
-      return <div>/* LOADING MESSAGE */</div>
+      return <div>LOADING MESSAGE</div>
     } else {
-      return (
+			return (
         <div>
-          <img src={url} />
+          <img src='https://apod.nasa.gov/apod/ap091127.html' alt='APOD image'/>
         </div>
       )
     }
+	  */
+
+	  // OHHHHHHHHHHHH
+	  // The problem was that it's an IMAGE element, so it needs the link to the jpg, not the html page that has an image on it 
+		return (
+			<div>
+				<img src='https://apod.nasa.gov/apod/image/0911/NGC1097L_gendler.jpg' alt='APOD image'/>
+			</div>
+		)
   }
 }
 
