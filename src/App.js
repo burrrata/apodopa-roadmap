@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////
 import React, { Component } from 'react'
 import './App.css'
-
+import './apod-archive-urls.txt'
 
 
 // The main component that displays the APOD image
@@ -18,50 +18,11 @@ class MyComponent extends React.Component {
     }
   }
 
-  componentDidMount() {
-			
-		const request = require('request')
-		const cheerio = require('cheerio')
-		//Being blocked by CORS
-		//What if instead of pulling the data live, there was a serparate repo w a list of the urls
-		//then this app would just ping that list
-		//const URL = 'https://apod.nasa.gov/apod/archivepix.html'
-		const URL = 'https://crossorigin.me/https://apod.nasa.gov/apod/archivepix.html'
-
-		request(URL, function (error, response, html) {
-
-			if (error) {
-			  console.log(error)
-			}
-			
-			if (response.statusCode != 200) {
-			  console.log(response.statusCode)
-			}
-
-			if (!error && response.statusCode === 200) {
-				
-				const $ = cheerio.load(html)
-				const parsedResults = []
-				
-				$('a').each(function(i, elem) {
-					const link = $(this).attr('href')
-					parsedResults.push(link)
-				});
-				
-				let output = parsedResults.slice(2)
-				console.log(output)
-
-				// pic a random image from the first 100 listed in the archive
-				let image = output[Math.floor(Math.random()*output.length)]
-
-				this.setState({
-					isLoaded: true,
-					items: output,
-					url: image,
-				})
-			}
-		});
-  }
+	chooseRandomAPOD() {
+	  let image = () => {
+		  5
+		} 
+	}
  
   render() {
     
