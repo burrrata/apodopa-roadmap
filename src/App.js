@@ -1,13 +1,15 @@
 // Imports
-//////////////////////////////////////////////////////////
+///////////////////////////////////////////////////
 import React, { Component } from 'react'
 import './App.css'
 import './apod-archive-urls.txt'
 
 
 // The main component that displays the APOD image
+//////////////////////////////////////////////////
 class MyComponent extends React.Component {
   
+	// init the state
   constructor(props) {
     super(props);
     this.state = {
@@ -18,28 +20,57 @@ class MyComponent extends React.Component {
     }
   }
 
-	chooseRandomAPOD() {
-	  let image = () => {
-		  5
-		} 
+	// get a random APOD url from the APOD archive list
+	getRandomAPOD() {
+		// read from the txt file
+		const readTextFile = file => {
+			let rawFile = new XMLHttpRequest();
+			rawFile.open("GET", file, false);
+			rawFile.onreadystatechange = () => {
+				if (rawFile.readyState === 4) {
+					if (rawFile.status === 200 || rawFile.status === 0) {
+
+						// do stuff
+						let allText = rawFile.responseText;
+						//console.log("allText: ", allText);
+				
+						let arr = allText.split('\n')
+						let randomAPOD = arr[Math.floor(Math.random()*arr.length)]
+						console.log(randomAPOD)
+
+						// set the state
+						this.setState({
+							isLoaded: true,
+							items: arr,
+							url: randomAPOD,
+						});
+						//console.log(this.state)
+					}
+				}
+			};
+			rawFile.send(null);
+    };
+
+		// THIS JUST LOOPS FOREVER IN ERRORS
+		//readTextFile('./apod-archive-urls.txt')
 	}
- 
-  render() {
-    
+  
+	// render the component to be included in the app
+	render() {  
+		// update the state with a random APOD image
+		this.getRandomAPOD()
+		// check the state
+		console.log(this.state)
     const { error, isLoaded, items, url} = this.state;
-    
+		// check for errors
     if (error) {
-      return <div>Error: {this.state.error.message}</div>
-    }
-    
-    else if (!isLoaded) {
-      return <div></div>
-    }
-    
-    else {
+      return <div>Error: {error}</div>
+    } else if (!isLoaded) {
+      return <div>/* LOADING MESSAGE */</div>
+    } else {
       return (
         <div>
-          <img src={this.state.url} />
+          <img src={url} />
         </div>
       )
     }
