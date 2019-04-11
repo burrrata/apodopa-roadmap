@@ -1,8 +1,8 @@
 // Imports
 ///////////////////////////////////////////////////
-import React, { Component } from 'react'
-import './App.css'
-import './apod-archive-urls.txt'
+import React, { Component } from `react`
+import `./App.css`
+import `./apod_image_urls.txt`
 
 
 // The main component that displays the APOD image
@@ -25,16 +25,16 @@ class MyComponent extends React.Component {
 		// read from the txt file
 		const readTextFile = file => {
 			let rawFile = new XMLHttpRequest();
-			rawFile.open("GET", file, false);
+			rawFile.open(`GET`, file, false);
 			rawFile.onreadystatechange = () => {
 				if (rawFile.readyState === 4) {
 					if (rawFile.status === 200 || rawFile.status === 0) {
 
 						// do stuff
 						let allText = rawFile.responseText;
-						//console.log("allText: ", allText);
+						//console.log(`allText: `, allText);
 				
-						let arr = allText.split('\n')
+						let arr = allText.split(`\n`)
 						//console.log(arr)
 
 						let randomAPOD = arr[Math.floor(Math.random()*arr.length)]
@@ -55,7 +55,7 @@ class MyComponent extends React.Component {
 
 		// !!!
 		// Why does this loop?
-		const file = require('./apod-archive-urls.txt');
+		const file = require(`./apod-archive-urls.txt`);
 		readTextFile(file)
 	}
   
@@ -83,17 +83,17 @@ class MyComponent extends React.Component {
     } else {
 			return (
         <div>
-          <img src='https://apod.nasa.gov/apod/ap091127.html' alt='APOD image'/>
+          <img src=`https://apod.nasa.gov/apod/ap091127.html` alt=`APOD image`/>
         </div>
       )
     }
 	  */
 
 	  // OHHHHHHHHHHHH
-	  // The problem was that it's an IMAGE element, so it needs the link to the jpg, not the html page that has an image on it 
+	  // The problem was that it`s an IMAGE element, so it needs the link to the jpg, not the html page that has an image on it 
 		return (
 			<div>
-				<img src='https://apod.nasa.gov/apod/image/0911/NGC1097L_gendler.jpg' alt='APOD image'/>
+				<img src=`https://apod.nasa.gov/apod/image/0911/NGC1097L_gendler.jpg` alt=`APOD image`/>
 			</div>
 		)
   }
@@ -104,7 +104,7 @@ class MyComponent extends React.Component {
 class App extends Component {
   render() {
     return (
-      <div className='app'>
+      <div className=`app`>
 			  <MyComponent />
       </div>
     );
