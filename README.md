@@ -1,3 +1,5 @@
+# Current Roadmap
+
 ### APOD Archive Scraper ✔️
 Scrapes the NASA APOD Archive and returns a text file with the direct URLs of NASA APOS images
 - https://github.com/burrrata/apod-archive-scraper
@@ -20,7 +22,7 @@ Displays the APOD image of the day, then continiously morphs between randomly ch
 Arbitrary framework that allows users to upload arbitrary images to a decentralized database, then point a web app to that list to create a visualization that morphs between those images fluidly, then make that visualization viewable via a publically accessible link.
 
 
-# Ideas
+# Other Ideas
 
 ### Progressive Growing of APOD 
 What if we applied NVIDIA's [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) to the APOD archive instead of the celebrity faces dataset?
