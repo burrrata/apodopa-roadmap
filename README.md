@@ -53,3 +53,9 @@ Training on the APOD dataset rather than art
 
 <br>
 
+### Art on APOD
+Neural synthesis and artistic image interpolation into APOD images.
+- http://genekogan.com/works/neural-synth/
+- https://github.com/genekogan/neural-synth
+- https://janhuenermann.com/blog/abstract-art-with-ml
+- https://github.com/janhuenermann/blog
