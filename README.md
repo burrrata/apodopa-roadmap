@@ -12,7 +12,7 @@ Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
 ### Web App V2 
 Displays the APOD image of the day, then continiously morphs between randomly chosen image from the APOD archive.
 
-### Decentralized image hosting/viewing w IPFS, Swarm, or something
+### Decentralized Images Framework
 - Automated script to upload APOD images to a decentralized database.
 - API to easily interact with and view those APOD images
 
