@@ -66,3 +66,12 @@ Neural synthesis and artistic image interpolation into APOD images.
 - https://github.com/genekogan/neural-synth
 - https://janhuenermann.com/blog/abstract-art-with-ml
 - https://github.com/janhuenermann/blog
+
+<br>
+
+### APOD Tensorflow Dataset
+Package the APOD Archive dataset for the [Tensorflow community](https://www.tensorflow.org/resources/models-datasets) to work with
+- would save APOD from having their API hammered
+- would save ML researchers time
+- would create cooler stuff besides chairs and faces
+
