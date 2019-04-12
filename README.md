@@ -3,8 +3,8 @@ Scrapes the NASA APOD Archive and returns a text file with the direct URLs of NA
 - https://github.com/burrrata/apod-archive-scraper
 
 ### Web App V1 
-React App that randomly displays images from a list of APOD URLs
-- https://github.com/burrrata/apod-react-viewer
+React App that displays images from a list of URLs
+- https://github.com/burrrata/react-image-viewer
 
 ### Image Morph/Interpolation Alg 
 Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
