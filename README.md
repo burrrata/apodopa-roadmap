@@ -14,7 +14,7 @@ React App that displays images from a list of URLs
 
 <br>
 
-### Image Morph/Interpolation Alg 
+### Image Morphing/Interpolation Alg 
 Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
 - https://github.com/burrrata/arbitrary-image-morphing
 
