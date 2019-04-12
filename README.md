@@ -1,13 +1,15 @@
-
-### Step 1
-
-Use the APOD Archive Scraper to get a list of image URLs for the React app
-
+### APOD Archive Scraper ✔️
+Scrapes the NASA APOD Archive and returns a text file with the direct URLs of NASA APOS images
 - https://github.com/burrrata/apod-archive-scraper
 
-### Step 2
+### You Are Here 🔥
+- organize the repo so that all things APOD related can live here
 
-Build a React app that displays images from APOD
-- 🔥 APOD API: randomly select an image via the API and display it to the screen
-- 🔥 NN Image Transitions: NN that morphs between arbitrary images
-- 🔥 App: a React application that continiously morphs between images from NASA's APOD archives
+### Web App V1 
+React App that randomly displays images from a list of APOD URLs
+
+### Image Morph/Interpolation Alg 
+Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
+
+### Web App V2 
+Displays the APOD image of the day, then continiously morphs between randomly chosen image from the APOD archive.
