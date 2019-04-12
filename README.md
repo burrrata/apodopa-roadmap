@@ -32,7 +32,7 @@ Displays the APOD image of the day, then continiously morphs between randomly ch
 <br>
 
 ### Web App V3
-Arbitrary framework that allows users to upload arbitrary images to a decentralized database, then point a web app to that list to create a visualization that morphs between those images fluidly, then make that visualization viewable via a publically accessible link.
+Arbitrary framework that allows users to strip all metadata from photos and then upload them to a decentralized database, then point a web app to that list to create a visualization that morphs between those images fluidly, then make that visualization viewable via a publically accessible link.
 
 <br>
 <br>
