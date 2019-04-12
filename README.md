@@ -41,6 +41,12 @@ Arbitrary framework that allows users to upload arbitrary images to a decentrali
 
 <br>
 
+### APOD Archive Organization
+Organizing APOD images so that the most similar images are next to each other. This might make it easier for the morphing between them. It might also make the transitions less dramatic. Time will tell.
+- https://github.com/ml4a/ml4a-guides/blob/master/notebooks/image-path.ipynb
+
+<br>
+
 ### Progressive Growing of APOD 
 What if we applied NVIDIA's [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) to the APOD archive instead of the celebrity faces dataset?
 - maybe start with something like [DCGAN](https://github.com/Newmu/dcgan_code) that's less computationally intensive
