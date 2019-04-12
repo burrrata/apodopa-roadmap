@@ -13,3 +13,6 @@ Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
 
 ### Web App V2 
 Displays the APOD image of the day, then continiously morphs between randomly chosen image from the APOD archive.
+
+### Web App V3
+Arbitrary framework that allows users to upload or point to a list of images/urls and then visit a web address to view a slideshow that morphs between those images fluidly
