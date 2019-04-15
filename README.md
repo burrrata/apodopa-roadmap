@@ -3,14 +3,14 @@
 <br>
 
 ### APOD Archive Scraper ✔️
-Scrapes the NASA APOD Archive and returns a text file with the direct URLs of NASA APOS images
+Script to scrape the NASA APOD Archive and return a text file with the direct URLs of NASA APOS images
 - https://github.com/burrrata/apod-archive-scraper
 
 <br>
 
-### Web App V1 
+### Image Viewing App ✔️
 React App that displays images from a list of URLs
-- https://github.com/burrrata/react-image-viewer
+- https://github.com/burrrata/image-viewer
 
 <br>
 
@@ -20,7 +20,7 @@ Takes in 2 *arbitrary* images and smoothly morphs/interpolates between them
 
 <br>
 
-### Web App V2 
+### ApodopA
 Displays the APOD image of the day, then continiously morphs between randomly chosen image from the APOD archive.
 
 <br>
