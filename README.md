@@ -3,7 +3,7 @@
 <br>
 
 ### APOD Archive Scraper ✔️
-Script to scrape the NASA APOD Archive and return a text file with the direct URLs of NASA APOS images
+Scripts to scrape the NASA APOD Archive and returns a text file with the direct URLs of NASA APOD images
 - https://github.com/burrrata/apod-archive-scraper
 
 <br>
